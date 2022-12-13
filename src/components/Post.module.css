@@ -29,6 +29,12 @@
     outline: 2px solid var(--green-500);
 }
 
+.post .avatar:hover {
+    cursor: pointer;
+    outline: 2px solid var(--gray-300);
+    transition: 0.2s;
+}
+
 .post .authorInfo {
     height: 3rem;
     display: flex;
@@ -105,8 +111,7 @@
 
 .commentForm:focus-within footer {
     visibility: visible;
-    max-height: 100%;
-    transition: 0.2s;
+    max-height: none;
 }
 
 .commentForm button[type=submit] {

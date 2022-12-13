@@ -7,9 +7,9 @@ export function Post() {
         <article className={styles.post}>
             <header>
                 <div className={styles.author}>
-                    <img className={styles.avatar} src="https://media-exp1.licdn.com/dms/image/C4E03AQFQhvUxAZt2vQ/profile-displayphoto-shrink_800_800/0/1643718428366?e=1666828800&v=beta&t=ottiIiJJt1HxoXKTR7WZvo8Qrdfdx0tPG72brz65mDk" />
+                    <img className={styles.avatar} src="https://pps.whatsapp.net/v/t61.24694-24/289083108_3034353910208607_8513411991021710622_n.jpg?ccb=11-4&oh=01_AdTHg2WFNhGBJfq1z9La6k5jxT3EjyLRZC_mZzqy5ucH0A&oe=63A57020" />
                     <div className={styles.authorInfo}>
-                        <strong>Guilherme Carvalho</strong>
+                        <strong>Fabrício Magnus</strong>
                         <span>Dev Front-End Senior</span>
                     </div>
                 </div>
@@ -28,7 +28,7 @@ export function Post() {
                 <strong>Deixe seu feedback</strong>
                 <textarea placeholder="Deixe um comentário" />
                 <footer>
-                    <button type="submit">Comentar</button>
+                    <button type="submit">Publicar</button>
                 </footer>
             </form>
 

@@ -10,14 +10,18 @@ export function App() {
   return (
     <div className="App">
       <Header />
+
       <div className={styles.wrapper}>
+
         <Sidebar />
+
         <div>
           <Post />
           <Post />
-          <Post />
         </div>
+
       </div>
+
     </div>
   )
 }
