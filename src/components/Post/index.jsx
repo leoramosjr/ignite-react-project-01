@@ -2,22 +2,38 @@ import styles from "./Post.module.css"
 
 import { Comment } from "../Comment/index";
 import { Avatar } from "../Avatar/index";
+import {
+    format,
+    formatDistanceToNow,
+} from "date-fns";
+import ptBR from "date-fns/locale/pt-BR";
 
-export function Post(props) {
+export function Post({ author, publishedAt, content }) {
+    const publishedDateFormated = format(publishedAt, "d 'de' LLLL 'às' HH:mm'h'", {
+        locale: ptBR
+    })
+
+    const publishedDateRelativeToNow = formatDistanceToNow(publishedAt, {
+        locale: ptBR,
+        addSuffix: true,
+    })
+
     return(
         <article className={styles.post}>
             <header>
                 <div className={styles.author}>
-                    <Avatar src={props.author.avatar_url} />
+                    <Avatar src={author.avatarUrl} />
                     <div className={styles.authorInfo}>
-                        <strong>{props.author.name}</strong>
-                        <span>{props.author.role}</span>
+                        <strong>{author.name}</strong>
+                        <span>{author.role}</span>
                     </div>
                 </div>
-                <time title={props.publishedAt} dateTime={props.publishedAt}>Publicado há 1h</time>
+                <time title={publishedDateFormated} dateTime={publishedAt.toISOString()}>
+                    {publishedDateRelativeToNow}
+                </time>
             </header>
             <div className={styles.content}>
-                {props.content.map((content) => {
+                {content.map((content) => {
                     switch(content.type) {
                         case "paragraph":
                             return <p>{content.content}</p>

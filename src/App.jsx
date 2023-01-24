@@ -6,7 +6,7 @@ import styles from "./App.module.css"
 
 import "./global.css"
 
-//author: { avatar_url = "", name = "", role = "" }
+//author: { avatarUrl = "", name = "", role = "" }
 //publishedAt: Date
 //contnet: string
 
@@ -14,11 +14,11 @@ const posts = [
   {
     id: 0,
     author: {
-      avatar_url: "https://pps.whatsapp.net/v/t61.24694-24/289083108_3034353910208607_8513411991021710622_n.jpg?ccb=11-4&oh=01_AdTHg2WFNhGBJfq1z9La6k5jxT3EjyLRZC_mZzqy5ucH0A&oe=63A57020",
+      avatarUrl: "https://media.licdn.com/dms/image/D4D03AQEoydOEH1IM6Q/profile-displayphoto-shrink_800_800/0/1666622863828?e=1680134400&v=beta&t=EiyyhHEDz7ciOrmpNpOB3OGJQJFHScGZ0fKNvHP-F1g",
       name: "Fabrício Magnus",
       role: "Eterna Saudade"
     },
-    publishedAt: new Date('2021-08-26 14:38:00'),
+    publishedAt: new Date('2022-08-26 14:38:00'),
     content: [
       {type: 'paragraph', content: 'Fala galeraa 👋'},
       {type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portifa.' },
@@ -31,11 +31,11 @@ const posts = [
   {
     id: 1,
     author: {
-      avatar_url: "https://avatars.githubusercontent.com/u/26612513?v=4",
+      avatarUrl: "https://avatars.githubusercontent.com/u/26612513?v=4",
       name: "Felipe Duarte",
       role: "Bem Certinho"
     },
-    publishedAt: new Date('2021-10-06 18:31:49'),
+    publishedAt: new Date('2022-10-06 18:31:49'),
     content: [
       { type: 'paragraph', content: 'E aii pessoal, beleza?', },
       { type: 'paragraph', content: 'Comecei hoje um curso na Rocketseat sobre Node.js, muito top.', },
